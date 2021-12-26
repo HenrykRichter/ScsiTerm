@@ -1,6 +1,6 @@
 # SCSITerm 08-15 
 
-This project is a design of an active SCSI terminator for DB-25 ports.
+This project is a design of an active SCSI terminator for DB-25 ports. The PCB is supposed to fit into regular DB-25 shells.
 
 ## Pictures
 
