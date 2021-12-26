@@ -5,7 +5,7 @@ This project is a design of an active SCSI terminator for DB-25 ports.
 ## Pictures
 
 The picture below shows Revision1 of the board.
-![front view](https://github.com/HenrykRichter/scsiterm/raw/master/Pics/scsiterm_front.jpg)
+![front view](https://raw.githubusercontent.com/HenrykRichter/ScsiTerm/main/Pics/scsiterm_front.jpg)
 
 
 ## Parts list
