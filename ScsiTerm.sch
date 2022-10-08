@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "SCSITerm T-0815"
+Date "2022-09-03"
+Rev "0.3"
+Comp "Henryk Richter"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -477,12 +477,12 @@ Connection ~ 5000 1450
 Wire Wire Line
 	5000 1450 4800 1450
 $Comp
-L Regulator_Linear:LD1117S25TR_SOT223 U1
+L Regulator_Linear:LD1117S12TR_SOT223 U1
 U 1 1 612F876C
 P 2550 4650
 F 0 "U1" H 2550 4892 50  0000 C CNN
-F 1 "LD1117DT28TR" H 2550 4801 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 2550 4850 50  0001 C CNN
+F 1 "LD1117 SC-R" H 2550 4801 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2550 4850 50  0001 C CNN
 F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/99/3b/7d/91/91/51/4b/be/CD00000544.pdf/files/CD00000544.pdf/jcr:content/translations/en.CD00000544.pdf" H 2650 4400 50  0001 C CNN
 	1    2550 4650
 	1    0    0    -1  
@@ -505,16 +505,14 @@ TERMPWR
 $Comp
 L power:GND #PWR0104
 U 1 1 612FFFF5
-P 2550 4950
-F 0 "#PWR0104" H 2550 4700 50  0001 C CNN
-F 1 "GND" H 2555 4777 50  0000 C CNN
-F 2 "" H 2550 4950 50  0001 C CNN
-F 3 "" H 2550 4950 50  0001 C CNN
-	1    2550 4950
+P 2550 5350
+F 0 "#PWR0104" H 2550 5100 50  0001 C CNN
+F 1 "GND" H 2555 5177 50  0000 C CNN
+F 2 "" H 2550 5350 50  0001 C CNN
+F 3 "" H 2550 5350 50  0001 C CNN
+	1    2550 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 4650 3100 4650
 Wire Wire Line
 	5000 4650 5000 3850
 $Comp
@@ -534,17 +532,14 @@ Wire Wire Line
 $Comp
 L Device:C C2
 U 1 1 61303B3D
-P 3100 4800
-F 0 "C2" H 3215 4846 50  0000 L CNN
-F 1 "10uF" H 3215 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 4650 50  0001 C CNN
-F 3 "~" H 3100 4800 50  0001 C CNN
-	1    3100 4800
+P 4575 4800
+F 0 "C2" H 4690 4846 50  0000 L CNN
+F 1 "10uF" H 4690 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4613 4650 50  0001 C CNN
+F 3 "~" H 4575 4800 50  0001 C CNN
+	1    4575 4800
 	1    0    0    -1  
 $EndComp
-Connection ~ 3100 4650
-Wire Wire Line
-	3100 4650 5000 4650
 $Comp
 L power:GND #PWR0105
 U 1 1 6130407B
@@ -559,12 +554,12 @@ $EndComp
 $Comp
 L power:GND #PWR0106
 U 1 1 613042E2
-P 3100 4950
-F 0 "#PWR0106" H 3100 4700 50  0001 C CNN
-F 1 "GND" H 3105 4777 50  0000 C CNN
-F 2 "" H 3100 4950 50  0001 C CNN
-F 3 "" H 3100 4950 50  0001 C CNN
-	1    3100 4950
+P 4575 4950
+F 0 "#PWR0106" H 4575 4700 50  0001 C CNN
+F 1 "GND" H 4580 4777 50  0000 C CNN
+F 2 "" H 4575 4950 50  0001 C CNN
+F 3 "" H 4575 4950 50  0001 C CNN
+	1    4575 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -621,4 +616,70 @@ F 3 "" H 3200 2950 50  0001 C CNN
 $EndComp
 Text Label 3200 4650 0    50   ~ 0
 2.85V
+Connection ~ 4575 4650
+Wire Wire Line
+	4575 4650 5000 4650
+Wire Wire Line
+	2850 4650 3075 4650
+$Comp
+L Device:R R20
+U 1 1 6314292E
+P 2550 5200
+F 0 "R20" V 2343 5200 50  0000 C CNN
+F 1 "300" V 2434 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2480 5200 50  0001 C CNN
+F 3 "~" H 2550 5200 50  0001 C CNN
+	1    2550 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 63143B61
+P 3075 4800
+F 0 "R21" V 2868 4800 50  0000 C CNN
+F 1 "240" V 2959 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3005 4800 50  0001 C CNN
+F 3 "~" H 3075 4800 50  0001 C CNN
+	1    3075 4800
+	-1   0    0    1   
+$EndComp
+Connection ~ 3075 4650
+Wire Wire Line
+	3075 4650 4575 4650
+Wire Wire Line
+	3075 4950 2550 4950
+Wire Wire Line
+	2550 4950 2550 5050
+Connection ~ 2550 4950
+Text Notes 3475 5675 2    50   ~ 0
+optimal R20 is 307 Ohms
+$Comp
+L Device:C C3
+U 1 1 63147BEA
+P 3075 5175
+F 0 "C3" H 3190 5221 50  0000 L CNN
+F 1 "4.7uF" H 3190 5130 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3113 5025 50  0001 C CNN
+F 3 "~" H 3075 5175 50  0001 C CNN
+	1    3075 5175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 4950 3075 5025
+Connection ~ 3075 4950
+$Comp
+L power:GND #PWR0109
+U 1 1 6314B110
+P 3075 5350
+F 0 "#PWR0109" H 3075 5100 50  0001 C CNN
+F 1 "GND" H 3080 5177 50  0000 C CNN
+F 2 "" H 3075 5350 50  0001 C CNN
+F 3 "" H 3075 5350 50  0001 C CNN
+	1    3075 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 5325 3075 5350
+Text Notes 1600 5775 0    50   ~ 0
+Alternative for accurate 2.85V: populate R21=220 Ohms, R20 with 330 Ohms, C3 with 2.0 kOhms
 $EndSCHEMATC
