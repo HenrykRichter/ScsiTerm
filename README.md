@@ -10,7 +10,7 @@ The picture below shows Revision3 of the board.
 
 ## Parts list
 - 1  DB-25 male (solder cup)
-- 1  Voltage regulator LD1117 SC-R (or similar)
+- 1  Voltage regulator SOT-223 LD1117 SC-R (or similar)
 - 18 Resistors 110R 0805
 - 1  Resistor 680R 0805 (R19, optional)
 - 1  LED 0805 (optional)
